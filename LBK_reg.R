@@ -159,21 +159,18 @@ sd(coefficients_df2[[coefficient_name]])
 
 #rownames(coefficients_df) <- paste("Iteration", 1:nrow(coefficients_df))
 
-# Now you can use the dataframe for plotting
 if("SquareFoot" %in% names(coefficients_df1)) {
   hist(coefficients_df1$SquareFoot, main = "Histogram of SquareFoot Coefficients", xlab = "Coefficient Value")
 } else {
   cat("The 'SquareFoot' column does not exist in the dataframe.\n")
 }
 
-# Now you can use the dataframe for plotting
 if("SquareFoot" %in% names(coefficients_df2)) {
   hist(coefficients_df2$SquareFoot, main = "Histogram of SquareFoot Coefficients", xlab = "Coefficient Value")
 } else {
   cat("The 'SquareFoot' column does not exist in the dataframe.\n")
 }
 
-# Now you can use the dataframe for plotting
 if("SquareFoot" %in% names(coefficients_df3)) {
   hist(coefficients_df3$SquareFoot, main = "Histogram of SquareFoot Coefficients", xlab = "Coefficient Value")
 } else {
